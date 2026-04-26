@@ -1,0 +1,105 @@
+{% import "macros.html" as macro %}
+
+<!DOCTYPE html>
+<html lang="{% if page.extra.lang %}{{ page.extra.lang }}{% else %}{{ lang }}{% endif %}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) | safe }}">
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  
+  {% if config.generate_rss %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") }}">
+  {% endif %}
+
+  <meta name="description" content="{{ config.description }}">
+  <link rel="icon" href="{{ get_url(path="images/favicon.ico") }}" type="image/x-icon">
+
+  <!-- Open Graph / Twitter Meta (Minimalist) -->
+  <meta property="og:title" content="{% block ogtitle %}{{ config.title }}{% endblock ogtitle %}">
+  <meta property="og:description" content="{% block ogdesc %}{{ config.description }}{% endblock ogdesc %}">
+  <meta property="og:url" content="{% block ogurl %}{{ config.base_url }}{% endblock ogurl%}">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="{{ config.base_url }}">{{ config.title }}</a>
+            <div class="menu-static">
+              <ul class="nav">
+                {% block navbar %}
+                {% for item in config.extra.zola386_menu %}
+                <li class="{% if item.path == current_path | replace(from="/", to="") %}active{% endif %}">
+                  <a href="{{ config.base_url }}/{{ item.path }}"><span>{{ item.name }}</span></a>
+                </li>
+                {% endfor %}
+                {% endblock %}
+              </ul>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container navmargin">
+    <!-- Header fuori dalla row, così occupa tutta la larghezza -->
+    <header class="jumbotron subhead" id="overview">
+      {% block breadcrumb %}{% endblock breadcrumb %}
+
+      {% block header %}
+      <div class="page-header">
+	{% if page %}
+	<h1>{{ page.title }}</h1>
+	{% elif taxonomy %}
+	<h1>{{ taxonomy.kind | capitalize }}: {{ taxonomy.name | capitalize }}</h1>
+	{% else %}
+	<h1>HOME: <small>NO BRAIN INSIDE, USE YOUR OWN!</small></h1>
+	{% endif %}
+      </div>
+      {% endblock header %}
+    </header>
+    
+    <div class="row">
+      <main class="main-content">
+        {% block main %}
+          {% for page in paginator.pages %}
+            {{ macro::post_max(page=page) }}
+          {% endfor %}
+          {{ macro::paginator(ref=paginator, extra=config.extra) }}
+        {% endblock main %}
+      </main> 
+
+      <aside class="sidebar">
+        {% block sidebar %}
+          <!-- Sidebar Categories -->
+<h1>Categories</h1>
+<ul class="nav nav-list">
+  {% set categories = get_taxonomy(kind="categories") %}
+  {% for cat in categories.items %}
+    <li><a href="{{ cat.permalink }}">{{ cat.name }}</a></li> <!-- USATO cat.permalink DIRETTAMENTE -->
+  {% endfor %}
+</ul>
+
+<p></p>
+
+<!-- Sidebar Tags -->
+<h1>Tags</h1>
+<ul class="nav nav-list">        
+  {% set tags = get_taxonomy(kind="tags") %}
+  {% for tag in tags.items %}
+    <li><a href="{{ tag.permalink }}">{{ tag.name }}</a></li> <!-- USATO tag.permalink DIRETTAMENTE -->
+  {% endfor %}    
+</ul>
+        {% endblock sidebar %}
+      </aside>
+    </div>
+  </div>
+
+  <footer class="container">
+    <hr class="soften">
+    <p>
+      {{ config.extra.year }} &copy; <a href="{{ config.extra.author_url }}">{{ config.extra.author }}</a> | <a href="{{ config.extra.social_url }}">{{ config.extra.social }}</a> | {{ config.extra.vat }} 
+    </p>
+  </footer>
+</body>
+</html>

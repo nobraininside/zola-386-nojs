@@ -1,0 +1,67 @@
+# =============================================================================
+# SITE CONFIGURATION
+# =============================================================================
+
+# The root URL of your site. Used to generate absolute links and RSS feeds.
+base_url = "https://blog.nicolabaudo.fr"
+
+# UNCOMMENT TO ENABLE THE THEME
+theme = "zola-386-nojs"
+
+default_language = "en"
+title = "blog.nicolabaudo.fr"
+description = "No Brain Inside, Use Your Own!"
+
+# Enable SASS compilation for the DOS-minimalist theme
+compile_sass = true
+
+# Search index is disabled to maximize privacy and speed
+build_search_index = false
+
+# Taxonomies configuration
+taxonomies = [
+  {name="categories", rss=true},
+  {name="tags", rss=true},
+]
+
+# =============================================================================
+# THEME EXTRA PARAMETERS
+# =============================================================================
+
+# Footer content
+[extra]
+year = "2026"
+author = "Nicola Baudo"
+author_url = "https://nicolabaudo.fr"
+social = "Github"
+social_url = "https://github.com/nobraininside/zola-386-nojs"
+vat = "SIRET 99992053100012"
+
+keywords = "zola, theme, retro, hacking"
+theme_color = "#000084"
+
+# Navigation menu structure
+zola386_menu = [
+  {path="", name="Home"},
+  {path="categories", name="Categories"},
+  {path="tags", name="Tags"},
+  {path="about", name="About"},
+]
+
+# =============================================================================
+# SOCIAL & METADATA
+# =============================================================================
+
+linkedin_user = "nicola-baudo-7986117"
+github_user = "nobraininside"
+
+# UI Labels (Internationalization)
+label_tags = "Tags"
+label_tag = "Tag"
+label_categories = "Categories"
+label_category = "Category"
+label_author = "Author"
+label_date = "Date"
+label_taxonomy = "Taxonomy"
+label_reading = "Reading time"
+label_read_more = "Read more"

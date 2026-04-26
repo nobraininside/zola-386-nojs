@@ -1,0 +1,25 @@
+// =============================================================================
+// ZOLA 386 NOJS - GLOBAL STYLESHEET
+// =============================================================================
+
+// 1. Definizioni di base (Variabili, Reset, Griglia, Helper moderni)
+// Questo deve venire prima perché definisce le "fondamenta"
+@import "base";
+
+// 2. Personalizzazioni del tema (Colori, stili specifici, componenti)
+// Questo sovrascrive le basi laddove necessario (es. colori di bordo, ombre)
+@import "theme";
+
+// 3. Stili di fine-tuning (Specifici per il layout corrente)
+.navmargin {
+    margin-top: 20px;
+}
+
+// 4. Custom Font (Spostato qui per pulizia)
+@font-face {
+    font-family: 'DOS';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/fixedsys500c.woff') format('woff'), 
+         url('/fonts/fixedsys500c.ttf') format('truetype');
+}

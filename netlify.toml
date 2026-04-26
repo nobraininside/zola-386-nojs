@@ -1,0 +1,20 @@
+# =============================================================================
+# NETLIFY BUILD CONFIGURATION
+# =============================================================================
+
+[build]
+# Directory where the site is generated
+publish = "public"
+# Command used to build the static site
+command = "zola build"
+
+[build.environment]
+# Set the Zola version to ensure consistent builds across environments
+ZOLA_VERSION = "0.19.2"
+
+# =============================================================================
+# DEPLOY PREVIEW CONTEXT
+# =============================================================================
+# Automatically override base_url for Netlify PR previews
+[context.deploy-preview]
+command = "zola build --base-url $DEPLOY_PRIME_URL"

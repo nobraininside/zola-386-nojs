@@ -1,0 +1,56 @@
+{% extends "theme.html" %}
+
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
+
+{% block breadcrumb %}
+<p class="lead">
+  <span>&gt;&gt;</span>
+  <a href="{{ config.base_url }}">Home</a>
+  {% if page.taxonomies %}
+    <span class="divider">|</span>
+    {% if page.taxonomies.categories %}
+    <a class="category" href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0]) }}">{{ page.taxonomies.categories[0] }}</a>
+    {% endif %}
+    {% if page.taxonomies.tags %}
+    <span class="divider">|</span>
+      {% for tag in page.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a>{% if page.taxonomies.tags | length > 1 %}{% if loop.index != page.taxonomies.tags | length %},{% endif %}{% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+</p>
+{% endblock breadcrumb %}
+
+{% block main %}
+<article class="post">
+  <!-- Questo è l'header che vuoi che appaia SOLO negli articoli -->
+    <div class="post-content">
+    {{ page.content | safe }}
+  </div>
+
+  <hr>
+
+  <dl class="dl-horizontal">
+    <dt>{{ config.extra.label_date }}</dt>
+    <dd>{{ page.date | date(format="%Y-%m-%d") }}</dd>
+    
+    {% if page.taxonomies.categories or page.taxonomies.tags %}
+    <dt>{{ config.extra.label_taxonomy }}</dt>
+    <dd>
+      {% if page.taxonomies.categories %}
+        <a href="{{ get_taxonomy_url(kind="categories", name=page.taxonomies.categories[0]) }}">
+          {{ page.taxonomies.categories[0] }}
+        </a>
+      {% endif %}
+      
+      {% if page.taxonomies.tags %}
+        {% if page.taxonomies.categories %} | {% endif %}
+        {% for tag in page.taxonomies.tags %}
+          <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      {% endif %}
+    </dd>
+    {% endif %}
+  </dl>
+</article>
+{% endblock main %}

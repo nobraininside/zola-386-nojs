@@ -1,0 +1,29 @@
+# =============================================================================
+# ZOLA BUILD & CACHE
+# =============================================================================
+/public
+/static/processed_images
+.zola-build
+.zola-cache
+
+# =============================================================================
+# OPERATING SYSTEM & EDITOR TRASH
+# =============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =============================================================================
+# MISCELLANEOUS
+# =============================================================================
+# Ignore any accidental binary files or local environment configs
+*.log
+.env
+
+# altri file che non voglio condividere
+Makefile
+/gemini/

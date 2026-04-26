@@ -1,0 +1,20 @@
+{% extends "theme.html" %}
+
+{% block title %}{{ config.title }} - {{ config.extra.label_categories }}{% endblock title %}
+
+{% block header %}
+<header class="page-header">
+  <h1 class="inline-header">
+    <span class="hero-title">{{ config.extra.label_category | upper }}:</span>
+    <small>{{ term.name | upper }}</small>
+  </h1>
+</header>
+{% endblock header %}
+
+{% block main %}
+<ul>
+{% for page in term.pages %}
+  <li>{{ macro::post_min(page=page) }}</li>
+{% endfor %}
+</ul>
+{% endblock main %}

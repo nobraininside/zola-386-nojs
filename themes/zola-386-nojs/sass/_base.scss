@@ -1,0 +1,599 @@
+/* ==========================================================================
+   ZOLA 386 NOJS - CLEAN & MINIMAL CSS
+   ========================================================================== */
+
+/* Ensure modern block-level rendering for semantic HTML5 elements */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+/* Set base font size and adjust for mobile scaling */
+html { font-size: 100%; -webkit-text-size-adjust: 100%; }
+
+/* Global typography and background settings based on 386 DOS look */
+body {
+  margin: 0;
+  font-family: DOS, Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 18px;
+  line-height: 20px;
+  color: #bbbbbb;
+  background-color: #000084;
+}
+
+/* Link styling with DOS-style hover states */
+a { color: #fefe54; text-decoration: none; }
+a:hover, a:focus { color: #fefe54; background: #aa5500; }
+
+/* Define custom DOS-like font face source */
+@font-face {
+  font-family: 'DOS';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/fixedsys500c.woff') format('woff');
+}
+
+/* --- Layout Architecture (Modern Flexbox) --- */
+
+/* Main container with fixed width for standard desktop view */
+.container { width: 1128px; margin: 0 auto; }
+/* Row structure utilizing Flexbox for alignment */
+.row { display: flex; flex-wrap: wrap; margin-left: -24px; }
+/* Span-based columns using flex: 1 for equal distribution */
+[class*="span"] { margin-left: 16px; flex: 1; }
+
+/* Specific column width overrides */
+.span12 { width: 100%; }
+.span6 { width: 464px; }
+.span4 { width: 304px; }
+.span3 { width: 224px; }
+
+/* Sostituisci o aggiungi queste regole per rendere le span reattive ai 1128px */
+.span6 { width: calc(50% - 16px); }
+.span4 { width: calc(33.33% - 16px); }
+.span3 { width: calc(25% - 16px); }
+
+
+/* --- DOS Typography System --- */
+
+p { margin: 0 0 20px; }
+h1, h2, h3, h4, h5, h6 { 
+  margin: 0; font-family: inherit; font-weight: inherit; 
+  line-height: 20px; color: #ffffff; 
+}
+h1 { font-size: 18px; text-transform: uppercase;  }
+h1 small { font-size: 18px; color: #ffffff; }
+h2 { font-size: 18px; text-align: center; }
+h4 { font-size: 18px; color: #fe54fe; }
+
+/* Emphasized text styling */
+strong, em { font-weight: normal; color: #ffffff; }
+
+/* Lead paragraph with double border decoration */
+.lead {
+  padding: 9px 14px;
+  margin: 9px 4px;
+  font-size: 18px;
+  color: #ffffff;
+  border: 2px solid #bbbbbb;
+}
+
+/* --- Navigation & Sidebar components --- */
+.nav { margin-bottom: 20px; list-style: none; }
+
+/* Sidebar navigation with box-shadow depth effect */
+.nav-list {
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border: 2px solid #000000;
+  background: #bbbbbb;
+  -webkit-box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
+     -moz-box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
+          box-shadow: 0 0 0 5px, 11px 13px 0 4px black;
+}
+
+.nav-list > li > a {
+  padding: 0 8px;
+  color: #000000;
+  display: block;
+}
+
+.nav-list > li > a:hover {
+  color: #bbbbbb;
+  background-color: #000000;
+}
+
+.nav-list > .active > a {
+  color: #ffffff;
+  background-color: #00aaaa;
+}
+
+/* --- UI Elements --- */
+.page-header { 
+  padding: 20px; 
+  margin: 20px 0; 
+  background: #00aaaa; 
+}
+
+.page-header h1 { 
+  color: #000000; 
+  font-size: 18px; 
+  text-transform: uppercase; 
+}
+
+.page-header h1 small { 
+  color: #ffffff; 
+  font-size: 18px; 
+}
+
+/* Input, Textarea, and Select styling */
+input, textarea, select {
+  font-family: DOS, Monaco, monospace;
+  font-size: 18px;
+  background: #bbbbbb;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  outline: none;
+}
+
+/* Image styling with polaroid-like frame */
+.img-polaroid {
+  padding: 9px 4px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+
+hr {
+  margin: 6px 0 7px;
+  border: 0;
+  border-bottom: 2px solid #ffffff;
+}
+
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px;
+  border-left: 5px solid #bbbbbb;
+}
+
+/* Helper utilities */
+.clearfix::after { content: ""; display: table; clear: both; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.hide { display: none; }
+
+/* List definitions */
+dl { margin-bottom: 20px; }
+dt, dd { line-height: 20px; }
+dt { font-weight: normal; }
+dd { margin-left: 21px; }
+
+/* Horizontal description list structure */
+.dl-horizontal { zoom: 1; }
+.dl-horizontal:before,
+.dl-horizontal:after { display: table; line-height: 0; content: ""; }
+.dl-horizontal:after { clear: both; }
+
+.dl-horizontal dt {
+  float: left;
+  width: 162px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dl-horizontal dd {
+  margin-left: 182px;
+}
+
+/* --- DOS Components: Dropdown, Buttons, Navigation --- */
+
+/* Dropdown menu styling with block shadow */
+.dropdown-menu {
+  position: absolute; top: 100%; left: 0; z-index: 1000;
+  display: none; min-width: 160px;
+  padding: 9px 4px; margin: 5px 0 0;
+  list-style: none;
+  background-color: #bbbbbb;
+  border: 1px solid #000000;
+  -webkit-box-shadow: 0px 0px 0 5px #bbbbbb;
+          box-shadow: 0px 0px 0 5px #bbbbbb;
+}
+.dropdown-menu > li > a { display: block; padding: 0 10px; color: #000000; }
+.dropdown-menu > li > a:hover { color: #bbbbbb; background: #000084; }
+.dropdown-menu > .active > a { color: #bbbbbb; background-color: #fefe4a; }
+.dropdown-menu .divider { height: 1px; margin: 9px 0; background: #000000; }
+
+/* Base button styling with hard drop-shadow */
+.btn {
+  display: inline-block; padding: 0 10px; margin-bottom: 20px;
+  font-size: 18px; line-height: 20px; color: #000000;
+  text-align: center; cursor: pointer; background: #bbbbbb;
+  border: 0;
+  -webkit-box-shadow: 10px 10px 0 #000000;
+          box-shadow: 10px 10px 0 #000000;
+}
+.btn:hover { background: #555555; color: #ffffff; }
+.btn-block { display: block; width: 100%; box-sizing: border-box; }
+
+/* Button with command-line style brackets */
+.btn-cmd:before { content: "< "; }
+.btn-cmd:after { content: " >"; }
+
+/* Navbar navigation structure */
+.nav-list > li > a { padding: 0 8px; color: #000000; display: block; }
+.nav-list > .active > a { color: #ffffff; background-color: #00aaaa; }
+
+/* --- Navbar Compatta (DOS Minimalist) --- */
+.navbar { 
+  margin-bottom: 10px;        /* Ridotto da 20px a 10px */
+  background: #bbbbbb; 
+  padding: 0;                 /* Azzerato padding generale */
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  width: 1128px;      
+  margin: 0 auto;    
+}
+
+
+/* Navbar links: padding verticale azzerato */
+/* .navbar .nav > li > a { 
+  padding: 0 10px;           
+  color: #000000; 
+  text-decoration: none; 
+} 
+*/
+/* Page header spacing (per allineare la sezione azzurra) */
+.page-header { 
+  margin-top: 10px;           /* Ridotto da 20px a 10px */
+  padding: 20px 20px !important;         /* Padding ridotto come richiesto prima */
+  background: #00aaaa; 
+}
+
+/* Breadcrumb navigation with DOS-style prompt prefix */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  background-color: #000000;
+  color: #bbbbbb;
+  font-family: DOS, monospace;
+}
+.breadcrumb::before { content: "C:\\> "; margin-right: 10px; }
+.breadcrumb > li { display: inline; }
+.breadcrumb > li::after { content: "/"; padding: 0 10px; color: #bbbbbb; }
+.breadcrumb > li:last-child::after { content: ""; }
+.breadcrumb > .active { color: #ffffff; }
+
+/* Caret/Triangoli - DOS-style caret indicator */
+.caret { 
+  display: inline-block; 
+  width: 0; height: 0; 
+  vertical-align: middle; 
+  border-top: 4px solid #000; 
+  border-right: 4px solid transparent; 
+  border-left: 4px solid transparent; 
+}
+
+/* --- Pagination & Modal --- */
+
+/* Pagination with inverted high-contrast colors */
+.pagination { 
+  margin: 20px 0; 
+  display: flex; 
+  justify-content: center; 
+}
+
+.pagination ul { 
+  display: flex; 
+  list-style: none; 
+  padding: 0; 
+  margin: 0;
+}
+
+.pagination ul > li > a { 
+  padding: 10px 15px; 
+  background: #000084; 
+  color: #ffffff;      
+  text-decoration: none; 
+  border: 1px solid #000084; 
+}
+
+.pagination ul > .active > a { 
+  background: #ffffff; 
+  color: #000000; 
+}
+
+.pagination ul > li > a:hover {
+  background: #008888; 
+  color: #ffffff;
+}
+
+.pagination-centered { 
+  text-align: center; 
+  justify-content: center; 
+}
+
+/* Pager navigation */
+.pager { margin: 20px 0; text-align: center; list-style: none; overflow: hidden; }
+.pager li > a { padding: 5px 14px; background: #555555; color: #fff; text-decoration: none; }
+.pager .next > a { float: right; }
+.pager .previous > a { float: left; }
+
+/* Modal overlay and window styling */
+.modal-backdrop { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; opacity: 0.8; z-index: 1040; }
+.modal { 
+  position: fixed; top: 10%; left: 50%; width: 560px; margin-left: -280px; 
+  background: #fff; border: 2px solid #000; z-index: 1050; 
+  outline: none;
+}
+.modal-header { padding: 10px; border-bottom: 2px solid #000; }
+.modal-body { padding: 15px; max-height: 400px; overflow-y: auto; }
+.modal-footer { padding: 10px; text-align: right; background: #eee; border-top: 2px solid #000; }
+
+/* Tooltip styling */
+.tooltip { position: absolute; z-index: 1030; display: block; opacity: 0.8; pointer-events: none; }
+.tooltip-inner { 
+  padding: 5px 10px; color: #fff; background: #000; 
+  font-family: DOS, monospace; 
+  border: 1px solid #fff;
+}
+
+/* --- Popover, Thumbnails & Label --- */
+
+/* Popover with drop-shadow */
+.popover {
+  position: absolute; z-index: 1010; display: none;
+  max-width: 496px; padding: 2px;
+  background: #ffffff; border: 2px solid #000000;
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+}
+.popover-title { padding: 8px; background: #eee; border-bottom: 2px solid #000; font-weight: bold; }
+.popover-content { padding: 10px; color: #000; }
+
+/* Flexible thumbnail grid */
+.thumbnails { display: flex; flex-wrap: wrap; list-style: none; padding: 0; margin-left: -16px; }
+.thumbnails > li { margin-left: 16px; margin-bottom: 20px; }
+.thumbnail { 
+  display: block; padding: 4px; border: 2px solid #bbbbbb; 
+  transition: border-color 0.2s;
+}
+.thumbnail:hover { border-color: #fefe54; }
+.thumbnail img { display: block; max-width: 100%; height: auto; }
+
+/* Labels and Badges (console-style) */
+.label, .badge {
+  display: inline-block; padding: 0 10px;
+  font-size: 18px; color: #ffffff; background-color: #555555;
+}
+.badge { border-radius: 10px; }
+.label-important { background-color: #aa0000; }
+.label-warning   { background-color: #a85400; }
+.label-success   { background-color: #00aa00; }
+.label-info      { background-color: #000000; }
+
+/* Media Object layout */
+.media { display: flex; align-items: flex-start; margin-top: 15px; }
+.media-object { margin-right: 10px; max-width: 64px; }
+.media-body { flex: 1; }
+
+/* --- Progress, Accordion, Carousel & UI Helpers --- */
+
+/* Progress bar with DOS border */
+.progress { height: 20px; background: #bbbbbb; border: 2px solid #000; margin-bottom: 20px; }
+.progress .bar { height: 100%; background: #0e90d2; width: 0; }
+.progress-danger .bar { background: #dd514c; }
+.progress-success .bar { background: #5eb95e; }
+
+/* Accordion groups */
+.accordion-group { margin-bottom: 2px; border: 2px solid #000; }
+.accordion-toggle { display: block; padding: 8px; cursor: pointer; color: #000; font-weight: bold; }
+.accordion-inner { padding: 9px; border-top: 2px solid #000; }
+
+/* Carousel controls */
+.carousel { position: relative; margin-bottom: 20px; }
+.carousel-inner { overflow: hidden; }
+.carousel-control { 
+  position: absolute; top: 40%; width: 40px; height: 40px; 
+  background: #555555; color: #fff; text-align: center; border: 2px solid #fff;
+  line-height: 30px; font-size: 30px; cursor: pointer;
+}
+.carousel-control.right { right: 15px; }
+.carousel-control.left { left: 15px; }
+
+/* Hero Unit with blink effect */
+.hero-unit {
+  padding: 20px; background: #00aaaa; border: 4px double #fff;
+  color: #fff; outline: 4px solid #00aaaa; margin-bottom: 20px;
+}
+.hero-unit h1 { text-decoration: blink; font-size: 18px; text-align: center; color: #fff; }
+
+/* Utility helpers */
+.pull-right { float: right; }
+.pull-left { float: left; }
+.hide { display: none; }
+
+/* 386 System Overlay */
+#wrap386 { position: fixed; right:0; bottom:0; z-index:99; width:100%; height:100%; background:#000084; pointer-events: none; }
+#bar386 { float:right; width:100%; height:20px; font-weight:bold; color:#fff; background:#000084; }
+#cursor386 { position:fixed; right:0; bottom:0; z-index:100; font-weight:bold; color:#fff; }
+
+/* --- Responsive Overrides (Mobile-specific adjustments) --- */
+
+@media (max-width: 768px) {
+  .container { width: auto !important; padding: 0 10px; }
+  .row { flex-direction: column; }
+  [class*="span"] { width: 100% !important; margin-left: 0 !important; }
+  
+  /* Hide non-essential mobile elements */
+  .hidden-phone { display: none !important; }
+}
+
+/* --- Final Optimized Layout (Main Content & Sidebar) --- */
+.row { 
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-left: -16px; 
+}
+
+.main-content { 
+  flex: 3; 
+  min-width: 0; 
+  margin-left: 24px;
+}
+
+.sidebar { 
+  flex: 1; 
+  min-width: 280px; 
+  margin-left: 24px;
+}
+
+/* Responsive adjustment for screens < 768px */
+@media (max-width: 768px) {
+  .row { margin-left: 0 !important; } /* Reset su mobile */
+  .main-content, .sidebar { margin-left: 0 !important; }
+}
+
+/* --- Navbar e Header BIOS-Style Definitivo --- */
+
+/* 1. Navbar Container */
+.navbar-inverse .navbar-inner {
+    display: flex;
+    flex-wrap: wrap;          /* Permette il wrap solo se necessario */
+    justify-content: center;  /* Centra tutto */
+    align-items: center;
+    background: #bbbbbb !important;
+    padding: 1px 10px !important;
+    min-height: 24px;
+}
+
+/* 2. Brand (Blu su grigio, minuscolo) */
+.navbar .brand {
+    color: #000084 !important;
+    font-weight: bold;
+    text-transform: none !important;
+    margin-right: 20px;
+    text-decoration: none;
+    white-space: nowrap;      /* Impedisce al brand di spezzarsi a metà */
+}
+
+/* 3. Menu Nav (Spazi e layout) */
+.navbar .nav {
+    display: flex !important;
+    list-style: none;
+    margin: 0;
+    gap: 15px;
+    flex-wrap: nowrap;        /* Su desktop i link NON vanno a capo */
+    justify-content: center;
+}
+
+.navbar .nav > li { 
+    display: flex; 
+    align-items: center; 
+}
+
+/* 4. Link Menu (Nero su grigio) */
+.navbar .nav > li > a {
+    color: #000000 !important;
+    background: #bbbbbb !important;
+    padding: 0 8px !important;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: none !important;
+}
+
+/* 5. Stato Attivo/Hover (Grigio su nero, piena altezza) */
+.navbar .nav > li.active > a,
+.navbar .nav > li > a:hover {
+    color: #bbbbbb !important;
+    background: #000000 !important;
+}
+
+/* 6. Page Header (Altezza aumentata di 1/4) */
+.page-header { 
+    padding: 25px 20px !important; /* Aumentato per dare respiro */
+    margin: 10px 0 !important;
+    background: #00aaaa; 
+    border-bottom: 4px solid #000000; 
+}
+
+.menu-static { display: flex; align-items: center; }
+
+body { padding-top: 0 !important; }
+
+@media (max-width: 768px) {
+    .navbar-inverse .navbar-inner {
+	padding: 10px !important;
+	flex-direction: column; /* Impila Brand e Menu verticalmente */
+    }
+
+    .navbar .brand {
+	margin-right: 0;
+	margin-bottom: 5px;
+    }
+
+    .navbar .nav {
+	flex-wrap: wrap;       /* Su mobile i link possono andare a capo */
+	gap: 8px;
+    }
+}
+
+
+/* === GOOGLE PAGE INSIGHTS COMPLIANCE === */
+/* --- Accessibilità Link Footer & Testo --- */
+
+/* Applichiamo la sottolineatura solo dove serve per non rovinare il look DOS */
+footer a, .post-content a {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 3px;
+}
+
+/* Effetto Hover "DOS" che cambia anche la forma, non solo il colore */
+footer a:hover, .post-content a:hover {
+    text-decoration: none;
+    background-color: #fefe54 !important; /* Giallo DOS */
+    color: #000000 !important;           /* Testo nero */
+    padding: 0 4px;                      /* Crea un piccolo "box" di evidenziazione */
+}
+
+/* --- Page Header Accessibilità --- */
+.page-header {
+    padding: 25px 20px !important;
+    margin: 10px 0 !important;
+    background: #00aaaa;
+    border-bottom: 4px solid #000000;
+}
+
+/* Forza il testo del header in NERO (massimo contrasto su fondo ciano) */
+.page-header h1,
+.page-header h1 small {
+    color: #000000 !important;
+    text-shadow: none !important; /* Rimuovi eventuali ombre che sporcano */
+    font-weight: bold;           /* Il bold aumenta la leggibilità */
+}
+
+/* Trasforma i link della sidebar in blocchi a piena larghezza */
+.nav-list > li > a {
+    display: block;
+    padding: 6px 10px !important; /* Aumentiamo il padding per raggiungere i ~48px di altezza */
+    color: #000000 !important;
+    text-decoration: none;
+    border-bottom: 1px solid #999999; /* Linea di separazione per distinguere i link */
+}
+
+/* Effetto hover per confermare l'area cliccabile */
+.nav-list > li > a:hover {
+    background-color: #000000 !important;
+    color: #bbbbbb !important;
+}
+
+/* Rimuoviamo il margine eccessivo se c'è, per compattare la lista */
+.nav-list {
+    padding: 5px 0 !important; /* Puliamo il padding del contenitore */
+}
+

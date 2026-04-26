@@ -1,0 +1,8 @@
+{% extends "theme.html" %}
+
+{% block main %}
+  {% for page in paginator.pages %}
+    {{ macro::post_max(page=page) }}
+  {% endfor %}
+  {{ macro::paginator(ref=paginator, extra=config.extra) }}
+{% endblock main %}
