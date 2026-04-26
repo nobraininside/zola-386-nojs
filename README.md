@@ -62,7 +62,7 @@ vat = "YOUR_VAT_NR"
 ```
 #### Daily use
 
-Never forget [extra] field (which will appear inside read more button) fields  in post's/pages' frontmatter. Here is an example:
+Never forget [extra] field (which will appear inside read more button) and date in post's/pages' frontmatter. Here is an example:
 
 ```toml
 +++
