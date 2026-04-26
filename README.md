@@ -45,10 +45,13 @@ theme = "zola-386-nojs"
 ```
 
 Set homepage's header content:
+```toml
 title = "YOUR_WEBSITE'S_NAME_OR_URL"
 description = "YOUR_MOTTO"
+```
 
 Set also your footer's content:
+```toml
 [extra]
 year = "2026"
 author = "YOUR_NAME"
@@ -56,10 +59,12 @@ author_url = "YOUR_PERSONAL_WEBSITE'S_URL"
 social = "YOUR PREFERRED_SOCIAL"
 social_url = "YOUR_PERSONAL_SOCIAL'S_PAGE_URL"
 vat = "YOUR_VAT_NR"
-
+```
 #### Daily use
 
 Never forget [extra] field (which will appear inside read more button) fields  in post's/pages' frontmatter. Here is an example:
+
+```toml
 +++
 title = "Very very very very very looong title"
 description = "This description will appear under the title in homepage's posts list"
@@ -74,6 +79,7 @@ short_title = "Short title"
 categories = ["Tech-log"]
 tags = ["tutoriel", "securite", "linux", "qubes", "souverainete"]
 +++
+```
 
 🛠 Customization
 The theme uses SASS variables located in sass/_theme.scss. To customize colors or font sizes, you can create a sass/custom.scss file in your main site directory and override the defaults.
