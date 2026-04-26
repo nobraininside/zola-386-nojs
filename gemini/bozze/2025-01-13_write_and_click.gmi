@@ -1,3 +1,0 @@
-In the early days of computing the interface between human and machine was the keyboard. At this times, computer was a sort of advanced typewriter whose users had to write their commands.
-From the introduction of the window managers to the present, the way we communicate with personal computers has dramatically changed, as we mainly use the mouse to give orders.
-There is, however, a tremendous difference between writing and clicking

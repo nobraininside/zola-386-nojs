@@ -1,9 +1,0 @@
-# Sylpheed si blocca
-
-Se Sylpheed si blocca quando scarica le email con protocollo IMAP - può accadere quando vi sono più caselle da scaricare contemporaneamente - basta una semplice regolazione. In "Configuration > Common Preferences > Details > Advanced" bisogna cambiare il parametro "Socket I/O timeout", portandolo da 60 secondi, a 8' o  meno.
-
-=> gemini://amish2dotzero.pollux.casa/techlog Techlog
-=> gemini://amish2dotzero.pollux.casa/ Home
-
-=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
-Contatto: @Dig@mastodon.uno
