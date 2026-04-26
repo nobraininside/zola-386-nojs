@@ -5,13 +5,13 @@
 name = "zola-386-nojs"
 description = "A minimalist, DOS-inspired static site theme. Fast, lightweight, and privacy-focused."
 license = "MIT"
-homepage = "https://github.com/nobraininside/zola-386"
+homepage = "https://github.com/nobraininside/zola-386-nojs"
 
 # Updated minimum version to reflect modern Zola features
 min_version = "0.15.0"
 
 # Demo link (if applicable)
-demo = "https://zola386.netlify.app"
+demo = "https://blog.nicolabaudo.fr"
 
 # =============================================================================
 # AUTHOR INFORMATION
