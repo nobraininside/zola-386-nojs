@@ -70,7 +70,7 @@ title = "Very very very very very looong title"
 description = "This description will appear under the title in homepage's posts list"
 template = "page.html"
 date = 2025-07-21
-slug  = "qubes-os-securiser-vos-secrets-avec-pass"
+slug  = "very-very-very-very-loong-title"
 
 [extra]
 short_title = "Short title"
