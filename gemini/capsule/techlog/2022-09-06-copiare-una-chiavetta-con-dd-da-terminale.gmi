@@ -1,0 +1,44 @@
+# Copiare una chiavetta con dd da terminale
+
+Andresti a caccia di zanzare con un lanciarazzi? Immagino di no. Al computer invece, perché adoperi programmi inutilmente pesanti e complessi – anche se facili d'uso e accattivanti – per i compiti più semplici? Per copiare un file immagine o qualunque altra cosa, si può usare il comando da terminale `dd` in combinazione con:
+
+- `lsblk` su Linux, 
+- `sysctl hw.disknames` su OpenBSD o `camcontrol devlist` su FreeBSD,
+- `diskutil list` su macOS.
+
+Sono applicazioni da terminale molto più leggere degli equivalenti grafici Balena Etcher e simili, che rischiano di "impallare" il computer. 
+
+Ora vediamo vediamo come si usa `dd`, il comando di clonazione da linea di comando:
+
+> sudo dd if=SORGENTE of=DESTINAZIONE status=progress
+
+Ma per usarlo correttamente devi prima trovare il "nome" dato dal tuo computer alla sorgente e alla destinazione: la denominazione, infatti, può variare a seconda dell'hardware, del sistema operativo e della sequenza con cui sono state collegate le varie periferiche. Apri dunque il terminale e 
+
+1. digita`lsblk` (se usi Linux, sennò usa gli equivalenti indicati poco sopra): vedrai l'elenco dei *device*. Se hai, ad esempio, un pc e un hard disk esterno vedrai: **sda** e **sdb**, con le relative partizioni.
+2. inserisci la chiavetta da copiare (sorgente) e digita di nuovo `lsblk`: ora vedrai sda, sdb e **sdc**. Quest'ultima è la denominazione della chiavetta appena inserita.
+3. inserisci la chiavetta vuota (destinazione) e digitate ancora `lsblk`: apparirà anche **sdd**, l'ultima arrivata. 
+ 
+Ora sai come si chiamano le tue chiavette: sdc è la sorgente, sdd la destinazione. 
+
+Adesso puoi procedere alla clonazione. Il comando corretto è il seguente (se dalle verifiche appena descritte le tue chiavette hanno nomi diversi, modifica il comando sottostante in conseguenza):
+
+> sudo dd if=/dev/sdc of=/dev/sdd status=progress
+
+Nel dettaglio:
+
+- `sudo`  significa *super user do*, è il comando che ti trasforma temporaneamente in amministratore, cosa necessaria per eseguire l'operazione. Dopo aver premuto invio, dovrai inserire la tua password utente (non quella di root)
+- `dd` è il comando di clonazione
+- `if=/dev/sdc` indica, come abbiamo visto, il device da cui copiare i dati
+- `of=/dev/sdd` dice dove inviare i dati
+- `status=progress` mostra la progressione della clonazione, altrimenti vedresti solo lampeggiare il cursore, come se il comando fosse inceppato, fino ad operazione conclusa. 
+
+ATTENZIONE! Piuttosto controlla dieci volte ma non sbagliare a indicare la corretta destinazione. Se scrivi ad esempio of=/dev/sda cancelli il tuo hard disk. Grandi libertà comportano grandi responsabilità...
+
+
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno
+
+

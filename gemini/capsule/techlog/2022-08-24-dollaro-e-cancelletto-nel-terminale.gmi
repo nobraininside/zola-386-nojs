@@ -1,0 +1,14 @@
+# Dollaro e cancelletto nel terminale
+
+Sapete qual è la differenza fra $ e # nel terminale (xterm, sakura, o qualsiasi altro)? L'ho scoperto solo di recente – il che non depone certo a mio favore – ma fornisce un'indicazione a suo modo utile:
+
+ 1. Quando appare il segno del dollaro `$` prima del cursore, vuol dire che siete in modalità utente (se avete problemi di identità digitate il comando `whoami` e il terminale vi dirà chi siete).
+
+ 2. Quando appare il segno cancelletto `#` prima del cursore, vuol dire che siete in modalità root. Quindi attenzione, se digitate il comando sbagliato potete distruggere il vostro sistema operativo!
+
+
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno

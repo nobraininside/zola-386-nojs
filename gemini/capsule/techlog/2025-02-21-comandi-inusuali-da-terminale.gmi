@@ -1,0 +1,32 @@
+# Comandi inusuali da terminale
+
+
+Qui di seguito alcuni comandi da terminale linux, che si usano di rado ma possono essere utili:
+
+-Font installati nel sistema operativo (o font con famiglia):
+> fc-list
+> fc-list :scalable=true:spacing=mono: family
+
+-Dimensione della cartella:
+> du -hs /cartella
+
+-Percorso di un programma eseguibile:
+> which nomeprogramma
+
+-Genera password memorizzabile (o 8 password da 12 carateri):
+> pwgen
+> pwgen 8 12
+
+-Mostra albero di processi:
+> pstree
+
+-Screenshot da terminale (o screen con selezione finestra):
+> scrot
+> scrot -s
+
+
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno

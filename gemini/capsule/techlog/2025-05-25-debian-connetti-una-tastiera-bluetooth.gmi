@@ -1,0 +1,41 @@
+# Debian: connetti una tastiera bluetooth
+## Che fare se non funziona l'applet
+
+Su Debian, Devuan e a rigor di logica sulle altre distribuzioni Linux, se non si riesce a collegare la tastiera buetooth con l'applet blueman su può procedere così:
+
+1) apri terminale come root
+
+2) digita e poi premi invio dopo ogni comando:
+> agent
+> KeyboardDisplay
+> pairable on
+> discoverable on
+> scan on
+
+3) premi il pulsante discovery mode sulla tastiera
+
+4) individua l'indirizzo MAC della tastiera, poi invia il comando:
+> scan off
+
+5) collega la tastiera:
+> bluetoothctl connect <MAC tastiera>
+
+6) abbina la tastiera:
+> bluetoothctl pair <MAC tastiera>
+A questo punto sul terminale appare:
+> [agent] PIN code: <n° PIN>
+
+7) inserisci dalla tastiera bluetooth il PIN apparso nel terminale. La tastiera ora dovrebbe funzionare. 
+
+Se andata a buon fine, la procedura di cui sopra non dovrà più essere ripetuta. Ogni volta che si riaccenderà la tastiera, questa si collegherà automaticamente al pc.
+
+
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno
+
+
+
+ 

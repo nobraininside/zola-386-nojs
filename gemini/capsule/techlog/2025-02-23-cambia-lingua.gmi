@@ -1,0 +1,26 @@
+# Cambia lingua
+
+Per cambiare lingua locale da terminale occorre fare quanto segue:
+
+1) verificare, come utente, qual è la lingua installata:
+> locale
+
+2) installare come root la lingua che ti interessa, ad esempio l'italiano. Vanno sempre preferiti le locali UTF, più complete, alle ISO
+> sudo dpkg-reconfigure locales
+Alla prima schermata selezionare la lingua che si vuol installare (nel nostro caso it_IT.UTF-8); alla successiva deidere se si vuol adottare per tutto il sistema o solo per gli utenti la lingua selezionata.
+
+3) trasferire al proprio ambiente utente i parametri mancanti (se digiti "locate" vedi che non è specificato nulla per LC_ALL, LC_LANG e LC_LANGUAGE):
+> echo "export LC_ALL=it_IT.UTF-8" >> $HOME/.bashrc
+> echo "export LANG=it_IT.UTF-8" >> $HOME/.bashrc
+> echo "export LANGUAGE=it_IT.UTF-8" >> $HOME/.bashrc
+
+4) attivare i parametri appena inseriti:
+> source $HOME/.bashrc
+
+5) controllare che è tutto ok digitando "locate". Se appare un messaggio di errore è probabile che uno dei parametri inseriti sopra al punto 3 sia stato scritto male: basta aprire .bashrc, correggere o sostituire la riga sbagliata e poi ripetere l'operazione 4.
+
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno

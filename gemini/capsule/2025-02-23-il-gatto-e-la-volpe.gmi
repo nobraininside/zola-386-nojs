@@ -1,0 +1,9 @@
+# Il gatto e la volpe
+
+Uno sconosciuto di bell'aspetto ti convince ad affidargli tutti i tuoi averi per proteggerli dai ladri. Nel nostro mondo iperconnesso lo sconosciuto è il fornitore di servizi VPN, che ti protegge dai trafficanti di dati (provider, governi e corporazioni di Silicon Valley); nel racconto di Pinocchio è impersonato dal gatto e la volpe.
+
+=> gemini://amish2dotzero.pollux.casa/gemlog Gemlog
+=> gemini://amish2dotzero.pollux.casa Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @amish2dotzero:matrix.underworld.fr

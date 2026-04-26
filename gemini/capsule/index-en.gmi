@@ -1,0 +1,19 @@
+#  Amish 2.0
+## Why this name?
+
+I'm not an expert, nor a member of the Amish communities. 
+
+I use the term "amish" not in his historical or religious sense but as a proof concept, a symbol, in an attempt to define a particular approach to life and technology, that is neither luddist neither orwellian.
+
+In the analogue age, Amish did not fully reject technology, but the implicit danger of modern life: destruction of social ties, loss of spirituality, having instead of being... Their approach to modernity was cautious and wary. 
+
+In the digital era, Amish 2.0, as a personification of "smolwebbinity", are the ones who do not blindly comply to the MICIMATT injunctions, try to be clever instead of smart, need to understand instead of persuading. Their approach to information technology, as a proeminent part of modern life, is as an instrument that must be tamed, not an idol to be worshipped. 
+
+So welcome, dear friend, to this capsule. We both know what is at stake in this technological bric-à-brac. 
+
+
+=> gemini://amish2dotzero.pollux.casa/gemlog Gemlog
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @amish2dotzero:matrix.org

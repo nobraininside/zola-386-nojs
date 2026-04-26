@@ -1,0 +1,48 @@
+# Più tastiera e meno mouse
+
+Cliccare è una modalità di caccia in cui l'attenzione è catturata dall'icona. Non c'è spazio per mediazioni del pensiero né visioni panoramiche: inseguendo la preda sullo schermo cadiamo immancabilmente in trappola. Ma come possiamo uscire dal labirinto schiavizzante delle immagini sapientemente disposte dal Grande Fratello? Ricominciando dalla scrittura, la più antica attività intellettuale umana. In ambito informatico ciò si traduce nell'acquisizione di una nuova gestualità di base: più tastiera e meno mouse. Qui di seguito vedremo come fare.<br />
+
+In articolo precedente abbiamo citato [Qutebrowser](/migliora-la-sicurezza-di-qutebrowser), un navigatore web che si può usare come tutti gli altri, cliccando a dritta e a manca, ma che ha anche la peculiarità di essere utilizzabile senza mai toccare il mouse. Si tratta, insomma, di un programma perfetto per acquisire quelle nuove gestualità di cui scrivevamo poco sopra, perché molto pedagogico: impari qualche scorciatoia e lui ad ogni passo ti indica cosa fare, come se stessi seguendo un corso per imparare a usare la macchina da scrivere.  Oltretutto è un ottimo browser: magari all'inizio lo usi per curiosità, ma poi rischi di non poterne fare a meno... e rimpiangi che gli altri software non siano utilizzabili allo stesso modo.
+
+Come si usa? Digitando alcune lettere o segni che aprono la barra degli indirizzi o eseguono alcune azioni. Ecco le scorciatoie principali:
+
+* se digiti la lettera `o` minuscola (=open) si apre la linea di comando in cui scrivere l'url da raggiungere rimanendo nello stesso tab; se digiti la lettera `O` maiuscola l'indirizzo verrà aperto in un nuovo tab. In ambo i casi, se dopo o/O non scrivi nulla e schiacci invio andrai direttamente alla pagina di default;
+* se digiti `go` puoi vedere e modificare, copiare o sostituire l'url del sito che stai visitando;
+* con `H` maiuscola (Shift+h) torni alla pagina precedente dello stesso tab; con `L` maiuscola (Shift+l) torni alla successiva;
+* `J` maiuscola (Shift+j) ti permette di fare lo switch in avanti tra i tab aperti; 
+* `/` apre ti consente di cercare una parola all'interno del tab attivo;
+* `d` minuscola chiude il tab attivo;
+* `f` minuscola ti permette di navigare all'interno della pagina (tra poco spieghiamo come);
+* `:` apre la linea di comando (se inizi a digitare appaiono tutti i comandi possibili);
+* `:q` chiude il programma;  
+* `ESC` è il tasto che ti consente di uscire dall'*INSERT MODE* (quello in cui entri quando digiti o, O, : oppure /) e tornare in modalità di semplice lettura.
+
+Ovviamente ci sono tante altre scorciatoie, che imparerai strada facendo. La più importante di tutte però è la lettera `f` minuscola, come vedremo ora. Per esempio, se avviamo Qutebrowser, schiacciamo il tasto della lettera `o`, digitiamo mojeek.com e premiamo il tasto invio apparirà questa schermata:
+
+[image mojeek8.jpg]
+
+Ora, se digitiamo `f` apparirà questa schermata:
+
+[image mojeek4.jpg]
+
+Come potete notare, la pagina è cosparsa di lettere o combinazioni di lettere: se le digitate apriranno il link o il campo corrispondente. Nella pagina mostrata poco sopra, se premete `f` si aprirà il campo del motore di ricerca mojeek in cui potrete inserire la vostra *query*, ossia il termine da cercare:
+
+[image mojeek5.jpg]
+
+Ad esempio, dopo aver inserito la *query* "qutebrowser", apparirà la pagina seguente con i risultati:
+
+[image mojeek9.jpg]
+
+Se volete proseguire la navigazione, digitate `f` e appariranno le scorciatoie dei link e dei campi presenti nella pagina. Nell'immagine seguente, se digitate `ld` tornate nella finestra della *query* (in cui ora è scritto "qutebrowser") e potete modificarne il contenuto, se digitate `kg` aprirete il  link a github.com e via dicendo.<br />
+IMPORTANTE: in qualunque momento se digitate di nuovo `f` scompaiono le scorciatoie; se siete in un campo modificabile premete `ENTER` per inviare i dati oppure `ESC` per uscire dall'*INSERT MODE*.
+
+[image mojeek10.jpg]
+
+Questi sono i rudimenti per navigare con Qutebroser. Vi consiglio di esercitarvi un poco alla volta ogni giorno, come un pianista che fa le sue scale. Imparerete e prenderete gusto in fretta. Dopo un po' avrete acquisito una familiarità con la tastiera che *ipso facto* comporterà un nuovo sguardo sulla pagina web: la vostra attenzione si focalizzerà ormai sul testo – quindi sui contenuti – più che sulle immagini. **Il vostro approccio non sarà più compulsivo ma riflessivo** e sarà più difficile condizionarvi.
+
+=> gemini://amish2dotzero.pollux.casa/philog Philog
+=> gemini://amish2dotzero.pollux.casa Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno
+

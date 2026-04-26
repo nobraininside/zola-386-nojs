@@ -1,0 +1,19 @@
+# Come disabilitare l'accesso a file e cartelle del tuo sito web
+## In server Linux e Windows
+
+Se hai uno spazio server collegato a un nome di dominio non gestito da un CMS e vuoi evitare il directory listing, ossia che gli estranei vi possano leggere i tuoi file e  cartelle, basta un semplice accorgimento:
+
+ 1. In caso di server Linux, cerca nella cartella public_html il file .htaccess e aggiungi alla riga 1, prima di qualunque altro testo: 
+> `Options -Indexes` 
+
+ 2. In caso di server Windows, cerca nella cartella public_html il file web.config e rimuovi la riga seguente: 
+> `<directoryBrowse>`
+
+(Credit: https://www.casbay.com)
+
+
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno

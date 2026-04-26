@@ -1,0 +1,9 @@
+# Il gatto e la volpe
+
+Uno sconosciuto di bell'aspetto ti convince ad affidargli tutti i tuoi averi per proteggerli dai ladri. Nel nostro mondo iperconnesso lo sconosciuto è il fornitore di servizi VPN, cui diamo sulla fiducia le chiavi della nostra Privacy. Nel racconto di Collodi è il gatto con la volpe, ai quali Pinocchio rimette i propri denari.
+
+=> gemini://amish2dotzero.pollux.casa/philog Philog
+=> gemini://amish2dotzero.pollux.casa Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno

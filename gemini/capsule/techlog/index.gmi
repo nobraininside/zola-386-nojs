@@ -1,0 +1,33 @@
+# Techlog
+## Tips & Tricks
+
+Promemoria di soluzioni che ho trovato, in ambito informatico, e che potrebbero servire ad altri. Alcune sono molto basiche, ovvietà a cui non avevo pensato, altre più avanzate. 
+
+
+=> gemini://amish2dotzero.pollux.casa/techlog/2025-05-25-debian-connetti-una-tastiera-bluetooth.gmi Debian: connetti una tastiera bluetooth
+=> gemini://amish2dotzero.pollux.casa/techlog/2025-05-20-esporta-calendario-e-contatti-da-baikal.gmi Esporta calendario e contatti da Baikal
+=> gemini://amish2dotzero.pollux.casa/techlog/2025-03-04-backup-qubes-impallato.gmi Backup Qubes impallato
+=> gemini://amish2dotzero.pollux.casa/techlog/2025-02-26-i-miei-comandi-vifm.gmi I miei comandi Vifm
+=> gemini://amish2dotzero.pollux.casa/techlog/2025-02-23-i-miei-qube.gmi I miei qube
+=> gemini://amish2dotzero.pollux.casa/techlog/2025-02-23-cambia-lingua.gmi Cambia lingua 
+=> gemini://amish2dotzero.pollux.casa/techlog/2025-02-21-comandi-inusuali-da-terminale.gmi Comandi inusuali da terminale
+=> gemini://amish2dotzero.pollux.casa/techlog/2025-02-17-sylpheed-si-blocca.gmi Sylpheed si blocca
+=> gemini://amish2dotzero.pollux.casa/techlog/2025-02-05-vifm-ssh.gmi Vifm e ssh
+=> gemini://amish2dotzero.pollux.casa/techlog/2024-05-26-come-installare-wordpress-lite.gmi Come installare WordPress-Lite
+=> gemini://amish2dotzero.pollux.casa/techlog/2024-05-22-ferma-l-avvio-di-console-log-in-openbsd.gmi Ferma l'avvio di console log in OpenBSDa
+=> gemini://amish2dotzero.pollux.casa/techlog/2024-03-20-compilare-un-programma-in-void-musl.gmi Compilare un programma in Void musl
+=> gemini://amish2dotzero.pollux.casa/techlog/2024-02-05-usr-local-piena-in-openbsd.gmi /usr/local piena in OpenBSD
+=> gemini://amish2dotzero.pollux.casa/techlog/2023-04-15-upgrade-di-openbsd.gmi Upgrade di OpenBSD 
+=> gemini://amish2dotzero.pollux.casa/techlog/2023-03-31-luminosita-persistente-dello-schermo-in-openbsd.gmi Luminosità persistente dello schermo in OpenBSD
+=> gemini://amish2dotzero.pollux.casa/techlog/2022-09-10-migliora-la-sicurezza-di-qutebrowser.gmi Migliora la sicurezza di Qutebrowser
+=>  gemini://amish2dotzero.pollux.casa/techlog/2022-09-06-copiare-una-chiavetta-con-dd-da-terminale.gmi una chiavetta con dd da terminale
+=> gemini://amish2dotzero.pollux.casa/techlog/2022-08-28-backup-incrementale-remoto-con-rsync.gmi Backup incrementale remoto con Rsync
+=> gemini://amish2dotzero.pollux.casa/techlog/2022-08-25-scaricare-un-file-remoto-con-scp-da-terminale.gmi Cli Scp
+=> gemini://amish2dotzero.pollux.casa/techlog/2022-08-24-dollaro-e-cancelletto-nel-terminale.gmi Dollaro e cancelletto nel terminale
+=> gemini://amish2dotzero.pollux.casa/techlog/2022-08-24-come-disabilitare-l-accesso-a-file-e-cartelle-del-tuo-sito-web.gmi Accesso a file e cartelle del tuo sito
+
+
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno

@@ -1,0 +1,31 @@
+# Per una nuova pedagogia informatica
+## Piccoli passi per una (vita) informatica libera
+
+Ricordate il video dell'Airbus che sorvolava la pista a bassa quota e poi, invece di risalire, proseguiva fino allo schianto nel bosco antistante? La successiva indagine appurò che il computer di bordo aveva impedito ai piloti di cabrare. Ma gli utenti anonimi degli infiniti, onnipresenti dispositivi elettronici, stanno correndo anch'essi al precipizio? A furia di essere smart, una cosa è certa:  come i piloti di cui sopra, nessuno ha il controllo dei propri device.
+
+In realtà la situazione è così grave che oggi non basta più imparare ad usare Linux o qualche applicazione FOSS per liberarci dal Grande Fratello. Dobbiamo ricominciare dall'inizio: perdere cattive abitudini, prima di acquisire conoscenze. Concepire una vera e propria pedagogia informatica in cui sono previste azioni coordinate, invece di limitarci ad interventi scollegati come fatto sinora.
+
+### Più tastiera e meno mouse
+Ma da dove si comincia? Dobbiamo innanzitutto apprendere i gesti corretti. Il primo cappio attorno al collo è la condanna a cliccare icone, a flippare schermate, tutte abitudini che hanno una cosa in comune: più clicchi meno pensi. Qui siamo al cuore della rivoluzione informatica operata da Steve Jobs e in seguito da Microsoft. Prima si scriveva e si leggeva. Con loro abbiamo cominciato ad inseguire immagini, tramutandoci all'istante nei selvaggi a cui un tempo regalavano perline. Questo passaggio – clicco l'iconcina della busta invece di scrivere il comando "mail" – ha forse reso popolare l'informatica, ma le ha fatto prendere una brutta piega: il nostro gusto per siti sgargianti pieni di popup, cookie e traccianti ha qui le sue radici. Il primo passo della nostra rieducazione si riassumerà pertanto in una frase: più tastiera e meno mouse.
+
+### Cifratura
+C'è poi il tema della privacy, di cui pochi capiscono la natura. Oggi tendiamo a confidare tutto sui social e ci conformiamo in modo acritico a qualunque richiesta delle autorità, mossi dall'idea che innocenza sia trasparenza. Ma il mito dell'uomo di vetro è una creatura del pensiero totalitario, che altro non vuole se non obbedienti delatori senza "nulla da nascondere", simili ai bambini che mostrano il vasino ai genitori. In realtà, l'intimità, l'aver qualcosa da nascondere, è propria dell'adulto, non del delinquente. Il secondo passo del nostro percorso verso la libertà passa dunque per la privacy, che si tutela coll'uso di comunicazioni cifrate.
+
+### Autogestione
+Vi è infine un ultimo aspetto, la gratuità. Anche questa rientra nelle cattive abitudini, indotte da intereressi terzi. Gmail, Facebook, Wikipedia: tutto gratis. Col tempo abbiamo capito che la gratuità non serve ad attrarre clienti per vendere poi servizi (questo, semmai, lo fanno i blogger, gli informatici freelance e le pmi), ma a manipolare l'opinione pubblica, vendere dati personali, appropriarsi dei contenuti degli utenti, censurare il dissenso. Purtroppo qui vale l'adagio "se è gratis, il prodotto sei tu". Il rimedio in questo caso, è autogestire i servizi essenziali, dal server email al cloud e così via.
+
+Queste sono, in sintesi, le linee guida da cui potremmo cominciare. In risposta alla triade comodità-trasparenza-gratuità caldeggiata da Big Five, rispondiamo con conoscenza-privacy-autogestione. Seguendo questo approccio, potremo poi sviluppare le singole azioni, mettendole in prospettiva. Nel nostro piccolo, è la linea che seguiremo, trattando per cominciare questi temi:
+
+1. Conoscenza: applicazioni da terminale, qutebrowser, tiling wm...;
+2. Privacy: crittografia mail, xmpp, tor...;
+3. Autogestione: server posta, flat file cms, nextcloud...
+
+
+=> gemini://amish2dotzero.pollux.casa/philog/index.gmi Philog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno
+
+
+

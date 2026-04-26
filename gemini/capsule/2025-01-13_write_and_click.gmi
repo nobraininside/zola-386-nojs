@@ -1,0 +1,6 @@
+# Writing and clicking
+## Interfaces and levels of understanding
+
+In the early days of computing the interface between human and machine was the keyboard. At this time, computers were a kind of advanced typewriter to which one had to write to issue orders.
+From the introduction of the window managers to the present, the way we communicate with our (personal) computers has dramatically changed, as we mainly use the mouse to give him orders. We still use keyboard to write our texts inside opened programs, but these text are intended to be for human readers, not for machines. The way we interact with computers is, most of the time, by clicking icons and following visual paths.
+There is, however, a huge difference between writing and clicking, from a cognitive point of view: the former is a complex operation, involving the exercise of thinking

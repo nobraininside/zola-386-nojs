@@ -1,0 +1,96 @@
+
+# ============================================================
+# Fix per kernel panic in azalia_shutdown() su Dell Optiplex 7020
+# Sistema operativo: OpenBSD
+# Data: 2025-10-30
+# ============================================================
+
+# PROBLEMA
+# --------
+# Durante lo spegnimento, il kernel va in panic:
+#   uvm_fault(...)
+#   kernel: page fault trap
+#   Stopped at azalia_shutdown+0x34 ...
+# Causa: bug nel driver azalia(4) (Intel HDA / Realtek ALC280)
+# Soluzione: disabilitare permanentemente il driver "azalia"
+
+# ============================================================
+# PROCEDURA PASSO-PASSO
+# ============================================================
+
+# 1) Esegui il boot normale ed entra nella shell.
+
+# 2) Fai un backup del kernel attuale (per sicurezza)
+doas cp /bsd /bsd.old
+
+# 3) Apri il configuratore del kernel integrato
+doas config -ef /bsd
+
+# 4) Dentro il prompt "config>", digita:
+disable azalia
+exit
+
+# 5) Riavvia il sistema
+doas reboot
+
+# 6) Dopo il riavvio, verifica che "azalia" non sia più caricato
+dmesg | grep azalia
+# (nessun risultato = successo)
+
+# ============================================================
+# PER RIPRISTINARE L'AUDIO IN FUTURO
+# ============================================================
+
+# 1) Entra di nuovo nel configuratore:
+doas config -ef /bsd
+
+# 2) Dentro "config>", digita:
+enable azalia
+exit
+
+# 3) Riavvia:
+doas reboot
+
+# 4) In caso di problemi, puoi bootare il vecchio kernel:
+#    boot> boot /bsd.old
+#  oppure puoi copiare di nuovo il kernel:
+doas cp /bsd.old /bsd
+
+# ============================================================
+# VERIFICA AUTOMATICA A OGNI BOOT
+# ============================================================
+# Per controllare che azalia rimanga disabilitato,
+# puoi aggiungere questo semplice snippet a /etc/rc.local.
+# Verrà eseguito ad ogni avvio e scriverà lo stato su /var/log/azalia_check.log
+
+sudo tee -a /etc/rc.local >/dev/null << 'EOF'
+# --- Inizio blocco controllo azalia ---
+dmesg | grep -q azalia
+if [ $? -eq 0 ]; then
+  echo "$(date): ATTENZIONE: azalia sembra attivo" >> /var/log/azalia_check.log
+else
+  echo "$(date): azalia correttamente disabilitato" >> /var/log/azalia_check.log
+fi
+# --- Fine blocco controllo azalia ---
+EOF
+
+# Dopo l'aggiunta:
+#  - Riavvia
+#  - Verifica il log con:
+#      tail -n 5 /var/log/azalia_check.log
+
+# ============================================================
+# NOTE UTILI
+# ============================================================
+# - "boot -c" disabilita i driver solo temporaneamente.
+# - "config -ef /bsd" li disabilita in modo permanente.
+# - /etc/boot.conf non serve per i driver.
+# - Backup consigliato prima di ogni upgrade di kernel:
+#     doas cp /bsd /bsd.`date +%Y%m%d`
+#
+# - Se il bug verrà risolto in future release di OpenBSD,
+#   potrai riattivare azalia con "enable azalia" e rimuovere il log.
+
+# ============================================================
+# FINE FILE
+# ============================================================

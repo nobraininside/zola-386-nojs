@@ -1,0 +1,53 @@
+# Backup incrementale remoto con rsync
+
+Se vuoi fare un backup dei tuoi file e cartelle su un server remoto o un pc della tua rete domestica puoi usare rsync: un programma solido in linea di comando, che consuma poche risorse. Alla prima sincronizzazione caricherà tutti i file/cartelle; le volte successive si limiterà a togliere/aggiungere/sostituire al backup remoto le modifiche avvenute nella cartella di partenza del tuo computer. In altre parole, avrai un **backup incrementale**, come la Time Machine degli utenti Mac.
+
+Ecco il comando, che poi spiegheremo nel dettaglio:
+
+> rsync -Phaz -e 'ssh -p numero_porta' --delete SORGENTE DESTINAZIONE
+
+
+La SORGENTE è la cartella da cui partono i dati, che verranno copiati nella cartelle di DESTINAZIONE. Teoricamente entrambe possono trovarsi sul medesimo computer, ma qui occuperemo solo della sincronizzazione del vostro pc:
+
+1) con un altro computer all'interno della medesima LAN di casa o dell'ufficio (mio pc -> 192.168.x.x)
+2) con un vostro account su un server esterno raggiungibile con un IP pubblico o un nome di dominio (mio pc -> ilmiosito.it).
+
+Più precisamente, il comando completo è questo:
+
+> rsync -Phaz -e 'ssh -p numero_porta' --delete /path/cartella_locale/  nomeutente@indirizzo:/path/cartella_remota/
+
+
+Ora lo spieghiamo passo a passo:
+
+ - `rsync`: è il comando di sincronizzazione.
+
+ - `-Phaz`: sono le opzioni. P=mostra progressione; h=human readable; a=archivia; z=comprimi.
+
+ - `-e 'ssh -p numero_porta'`: si usa se la porta di accesso non è standard. In linea di massima, e salvo configurazioni particolari: se vi collegate a un pc della voste interna, è probabile che la sua porta di accesso per le connessioni ssh/rsync sia quella di default, cioè la 22; in questo caso potete omettere completamente questa parte del comando. Se vi collegate a un server remoto è probabile che usi una porta inabituale per ssh/rsync; in questo caso chiedete all'amministratore del server qual è il numero della porta e inseritela nel comando (ad esempio: `-e 'ssh -p 2345'` se la porta usata è la 2345) .
+
+ - `--delete`: fa sì che rsync cancelli in remoto file e cartelle cancellati nel computer locale.
+
+ - `/path/cartella_locale/`: è il percorso assoluto della cartella locale da sincronizzare. Per esempio /home/mario/Documenti su Linux o /Users/mario/Documents su macOS. Il modo più semplice di conoscere il path esatto della vostra cartella è aprire un terminale in essa e digitare `pwd` (print working directory); in alternativa, alcuni file manager mostrano il percorso della cartella in cui vi trovate, o nella barra degli indirizzi o con clic destro > Proprietà. <br />
+IMPORTANTE: quando usate `rsync` non dimenticate mai lo slash `/` finale dopo l'ultima cartella del path (ad esempio: ...Documenti/) e state attenti a maiuscole/minuscole dei nomi di file e cartelle (ad esempio: Documenti ≠ documenti).
+
+ - `nomeutente@indirizzo:`: se vi collegate a un altro pc, che sia nella rete locale o nel web, dovete sempre fornire un nome utente e un indirizzo. L'indirizzo può essere l'IP dell'altro computer nella rete domestica/professionale, o un nome di dominio se ci si collega a un server remoto. Per esempio: `elena@192.168.1.46:` se ti connetti al pc di elena nella tua LAN;  `bulbasaur@ilmiosito.com:` se ti colleghi all'account di bulbasaur sul server col nome di dominio ilmiosito.com
+
+ - `/path/cartella_remota/`: è il percorso assoluto della cartella remota in cui andrete a fare il backup incrementale dei vostri dati. <br />
+Vi consiglio di creare una cartella apposita, nominandola ad esempio _RSYNC, nella cartella radice del server remoto. A tal fine loggatevi dal vostro provider, avviate cPanel e create la cartella. Poi, per conoscere il percorso (path) corretto di questa cartella, guardate nella colonna sinistra di cPanel: in alto vedrete l'icona di una casetta accanto alla quale è scritto il path in parentesi, ad esempio /home/bulbasaur: questa è la radice del percorso remoto. Aggiungete al path il nome della cartella da voi creata e avete il percorso completo della cartella remota, ad esempio: /home/bulbasaur/_RSYNC/
+
+In base a quanto scritto sopra, ecco ad esempio il comando per sincronizzare la cartella locale dell'utente "mario" su computer Linux, con la cartella _RSYNC dell'utente "bulbasaur" presso il server remoto ilmiosito.com, accessibile dalla porta 2345 :
+
+> rsync -Phaz -e 'ssh -p 2345' --delete /home/mario/Documenti/ bulbasaur@ilmiosito.com:/home/bulbasaur/_RSYNC/
+
+Lo stesso comando vale se il computer di destinazione è nella vostra LAN domestica e usate il suo IP  interno:
+
+> rsync -Phaz -e 'ssh -p 2345' --delete /home/mario/Documenti/ elena@192.168.1.46:/home/bulbasaur/Documenti/
+
+ATTENZIONE: in ogni caso, oltre a non dimenticare lo slash `/` finale dell'ultima cartella del path, badate bene di inserire i due punti `:` dopo il nome di dominio.
+
+
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno

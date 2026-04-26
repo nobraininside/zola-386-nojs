@@ -1,0 +1,13 @@
+## DeepSeek e carri armati
+
+Si fa un gran parlare in questi giorni di Intelligenza artificiale, e in particolare di DeepSeek. Colpisce, in particolare, la logica diversa con cui cinesi e americani affrontano il problema: i primi investendo somme che nessun altro può permettersi, per costruire macchine con ineguagliata potenza di calcolo; i secondi puntando su un software di migliore concezione - oltretutto open source - che rende l'hardware disponibile infinitamente più performante della controparte occidentale. 
+
+Somiglia, questa differenza d'approccio, a quella emersa in Ucraina (e non solo) sul campo di battaglia. Circolava un video, un paio d'anni fa, in cui alcuni militari russi discutevano tra loro, esprimendo stupore per quanto inadatte fossero le nostre costosissime armi. "Sono delle Cadillac - dicevano dei carri armati Abrahams - sono fatti per essere venduti nei saloni automobilistici, non per la guerra".
+
+Nei due casi l'errore occidentale lo stesso: confondere denaro e potenza, fiction e realtà, furbizia e intelligenza. 
+
+=> gemini://amish2dotzero.pollux.casa/philog Philog
+=> gemini://amish2dotzero.pollux.casa Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno

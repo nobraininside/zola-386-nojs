@@ -1,0 +1,31 @@
+# Vifm e ssh
+## Monta una partizione ssh (sftp) in vifm
+
+1) Installa sshfs
+
+2) Apri /home/<user>/.config/vifm/vifmrc ed inserisci alla fine della sezione "File types association" le righe seguenti:
+
+> "SSH with vifm (using sshfs)
+> filetype *.ssh FUSE_MOUNT2|sshfs %PARAM %DESTINATION_DIR
+
+poi salva il file.
+
+3) crea un file ssh (ad esempio "connessione.ssh"), rendilo eseguibile, e inserisci al suo interno i parametri di connessione:
+
+> nomeutente@server_remoto:/
+
+poi salva.
+
+4) apri vifm, seleziona il file ssh (es. "connessione.ssh) e premi il tasto invio: in questo modo il pannello laterale vifm si collega al server remoto indicato nel file, e puoi effettuare tutte le operazioni come se stessi lavorando in locale.
+
+Nota: al momento di collegarsi vifm chiede la password di accesso al server remoto. Se hai  installato in precedenza il tuo certificato id_rsa_pub sul server remoto, e digitato nel terminale del pc locale il comando ssh-add $HOME/.ssh/id_rsa, vifm non chiede la password per collegarsi.
+
+Altra nota: se non sei connesso al server e vuoi modificare il file ssh (es. "connessione.ssh") devi selezionarlo col cursore poi premere il tasto ":", digitare "edit"  e premere invio. 
+
+
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno
+

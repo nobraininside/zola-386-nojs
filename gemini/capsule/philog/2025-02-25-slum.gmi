@@ -1,0 +1,10 @@
+# Slum
+## Impressioni di viaggio online
+
+Quando lascio il protocollo gemini per accedere al web mi sembra di entrare in uno slum: pattume dappertutto, mendicanti, spacciatori, poliziotti corrotti, puzza. Questo è il mondo immaginato dal capitale finanziario: miserabili dentro e fuori, per quanto facoltosi.
+
+=> gemini://amish2dotzero.pollux.casa/philog Philog
+=> gemini://amish2dotzero.pollux.casa Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno

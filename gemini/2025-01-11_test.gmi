@@ -1,0 +1,20 @@
+#  Scrittura vs immagini
+## Come un antico scontro di civiltà si è riproposto oggi fra noi
+
+
+Scrittura e immagine sono due mondi che si scontrano da tempo immemore, talvolta apertamente: basti raffrontare gli affreschi di una chiesa cristiana alle decorazioni di una moschea, o l'acceso contrasto ai tempi di Bisanzio tra adoratori delle icone, gli iconodùli, e il partito avverso degli iconoclasti.
+Talvolta questi due mondi si sono incontrati, dando luogo ad inestimabili gioielli come le miniature medievali e a narrazioni più triviali come il fumetto moderno.
+Ma nell'era informatica questa polarità, a tatti complementare, si è mutata in una lotta senza pietà fra due modi di impartire comandi ai dispositivi elettronici: con la tastiera o con il mouse.
+
+Per comprendere appieno
+
+
+
+### Tastiera e mouse
+Il (personal) computer, all'origine, è uno strumento con cui si scrive e internet un luogo in cui si legge. Poi sono arrivate le immagini, non solo a integrare, arricchire, i contenuti online, ma a rivoluzionare il nostro modo di interagire con la macchina: si è infatti frapposta fra l'umano e lo strumento, divenendo il mezzo con cui trasmettiamo gli ordini al computer. Prima si scriveva (si pensi, ad esempio, al comando "cd", change directory, per entrare in una cartella), poi si è cominciato a cliccare. Prima usavamo la tastiera, poi abbiamo iniziato a usare il mouse. 
+
+### Di fronte all'imprevisto
+Scrivere è processo cognitivo complesso, che implica uno sforzo logico e l'esercizio della memoria. Scrivere è pensare. Scrivere comandi destinati a un computer è pensare, cioè sapere cosa fai e cosa vuoi, comprendere il processo, dominare la macchina, avere le basi per sapersi adattare a nuovi strumenti, sia hardware che software.
+Trasmettere ordini al computer cliccando icone posizionate sullo schermo, invece, è un semplice atto meccanico, basato sulla memoria visiva. È facile, si apprende al volo, ma non appena ti spostano l'icona (se fai un upgrade o addirittura cambi sistema operativo passando ad esempio da Windows a Mac): oh panico! Come faccio adesso?
+
+

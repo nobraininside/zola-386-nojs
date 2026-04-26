@@ -1,0 +1,34 @@
+# Tastiera e libertà
+## Ovvero i pericoli del mouse
+
+
+Scrittura e immagini sono due mondi che si scontrano da tempo immemore, talvolta apertamente: basti raffrontare gli affreschi di una chiesa cristiana alle decorazioni di una moschea, o l'acceso contrasto ai tempi di Bisanzio tra adoratori delle icone, gli iconodùli, e il partito avverso degli iconoclasti.
+Talvolta questi due mondi si sono incontrati, dando luogo a inestimabili gioielli come gli incunaboli medievali e a narrazioni più leggere come il fumetto moderno.
+Ma nell'era informatica assistiamo a una nuova rivalità senza esclusione di colpi: quella fra tastiera e mouse, intesi come mezzi di trasmissione dell'uomo al dispositivo elettronico. 
+
+### Tastiera e mouse
+
+La tastiera, erede della macchina da scrivere e del telefax, è lo strumento più antico ed è legata al mondo della scrittura. Il mouse, apparso all'epoca delle prime interfacce grafiche di Apple e poi di Windows, non è invece concepibile fuori dal mondo dell'immagine. Sembrano entrambi strumenti complementari: clicchiamo per avviare un programma in cui poi scriviamo i nostri contenuti. Ma la scrittura, in realtà, è stata relegata alla comunicazione fra esseri umani. Per impartire ordini al computer si usa ormai soltanto il mouse.
+
+### Scrivere o cliccare
+
+Il prevalere di uno strumento sull'altro non è solo una questione tecnica o pratica. Ognuno di esso ha una propria filosofia e fa appello a processi mentali diversi. La scrittura è una mediazione complessa fra pensieri, emozioni e volontà. Il clic invece è tutto nell'immediatezza, nella reazione a un'immagine, è un atto meno ponderato e più influenzabile.
+
+### Di fronte all'imprevisto
+
+Il prevalere del mouse sulla tastiera, come interfaccia uomo-macchina, inverte il rapporto di subordinazione. Il mouse trasforma l'uomo in topo e il computer nel labirinto in cui egli evolve seguendo percorsi tracciati da altri per lui.
+Ciò si vede facilmente nella diversa reazione delle persone di fronte a un cambiamento di sistema operativo, nel caso di un upgrade, per esempio, o di passaggio da Windows a Mac. Chi è abituato a usare solo il mouse viene spesso colto da vertigine ("Che faccio adesso? Non trovo più nulla"). Chi è abituato a digitare i propri comandi nel terminale si adatta più facilmente, perché è abituato a ragionare.
+ 
+### Libertà
+
+La libertà, scrive Tocqueville, risiede nelle abitudini quotidiane. Posto che ormai passiamo la maggior parte del nostro tempo davanti a un computer, importa come ci relazioniamo ad esso: è un mezzo che esegue i nostri ordini o lo strumento del nostro asservimento?
+Scrivere comandi in un terminale implica conoscenze, comprensione dei processi sottostanti, padronanza del mezzo. Cliccare icone è invece un processo meccanico e abitudinario, in cui ci si lascia guidare. 
+Ma se tutto il giorno ci adagiamo nella comodità di un clic, rinunciando a capire,  volere, osare, difficilmente saremo liberi nelle grandi cose. La scrittura è lo sperone che imprime la nostra volontà alle macchine e a chi le ha costruite.
+
+
+=> gemini://amish2dotzero.pollux.casa/philog Philog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno
+

@@ -1,0 +1,42 @@
+# Compilare un programma con Void musl
+
+I. OPERAZIONI PRELIMINARI
+
+> $ git clone https://github.com/void-linux/void-packages
+> $ cd void-packages
+> $ ./xbps-src binary-bootstrap
+
+II. PER OGNI SINGOLO PROGRAMMA
+
+1) CONFIGURA
+
+> $ ./xbps-src extract <package>
+> $ mkdir srcpkgs/<package>/files
+> $ cp masterdir/builddir/<package>-<version>/config.def.h srcpkgs/<package>/files/config.h
+
+Edit srcpkgs/<package>/files/config.h
+
+2) COMPILA E INSTALLA
+
+> $ ./xbps-src pkg <package>
+> # xbps-install -R hostdir/binpkgs <package>
+
+
+-  -  -  - -
+
+PATCH
+
+A. AGGIUNGI PATCH
+
+srcpkgs/<package>/patches
+
+B. REINSTALLA IL PROGRAMMA
+
+> # xbps-install -R hostdir/binpkgs -f <package>
+
+
+=> gemini://amish2dotzero.pollux.casa/techlog Techlog
+=> gemini://amish2dotzero.pollux.casa/ Home
+
+=> gemini://amish2dotzero.pollux.casa/licenza-creative-commons.gmi Condizioni d'uso
+Contatto: @Dig@mastodon.uno
