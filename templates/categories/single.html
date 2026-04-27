@@ -1,20 +1,16 @@
 {% extends "theme.html" %}
 
-{% block title %}{{ config.title }} - {{ config.extra.label_categories }}{% endblock title %}
+{% block title %}{{ config.title }} - {{ config.extra.label_tag }}: {{ term.name }}{% endblock title %}
 
-{% block header %}
-<header class="page-header">
-  <h1 class="inline-header">
-    <span class="hero-title">{{ config.extra.label_category | upper }}:</span>
-    <small>{{ term.name | upper }}</small>
-  </h1>
-</header>
-{% endblock header %}
+{% block header_content %}
+{# Questo codice verrà iniettato nel blocco header di theme.html #}
+{{ config.extra.label_category }}: {{ term.name | capitalize }}
+{% endblock header_content %}
 
 {% block main %}
 <ul>
-{% for page in term.pages %}
+  {% for page in term.pages %}
   <li>{{ macro::post_min(page=page) }}</li>
-{% endfor %}
+  {% endfor %}
 </ul>
 {% endblock main %}

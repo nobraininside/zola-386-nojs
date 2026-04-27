@@ -49,15 +49,19 @@
       {% block header %}
       <div class="page-header">
 	{% if page %}
+	{# Caso 1: Articoli o pagine singole #}
 	<h1>{{ page.title }}</h1>
-	{% elif taxonomy %}
-	<h1>{{ taxonomy.kind | capitalize }}: {{ taxonomy.name | capitalize }}</h1>
+
+	{% elif current_path == "/" or current_path == "" %}
+	{# Caso 2: Homepage specifica #}
+	<h1>HOME: <small>{{ config.description }}</small></h1>
+
 	{% else %}
-	<h1>HOME: <small>NO BRAIN INSIDE, USE YOUR OWN!</small></h1>
+	{# Caso 3: Tutto il resto (Tassonomie, tags, categories, ecc.) #}
+	<h1>{% block header_content %}{{ config.title }} <small>{{ config.description }}</small>{% endblock header_content %}</h1>
 	{% endif %}
       </div>
       {% endblock header %}
-    </header>
     
     <div class="row">
       <main class="main-content">

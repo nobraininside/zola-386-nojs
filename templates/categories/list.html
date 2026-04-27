@@ -2,18 +2,16 @@
 
 {% block title %}{{ config.title }} - {{ config.extra.label_categories }}{% endblock title %}
 
-{% block header %}
-<div class="page-header">
-  <h1>{{ config.extra.label_categories }}</h1>
-</div>
-{% endblock header %}
+{% block header_content %}
+{{ config.extra.label_categories }}
+{% endblock header_content %}
 
 {% block main %}
 <ul>
-  {% for category in terms %}
-    <li>
-      <a href="{{ category.permalink }}">{{ category.name }}</a> ({{ category.pages | length }})
-    </li>
+  {% for term in terms %}
+  <li>
+    <a href="{{ term.permalink }}">{{ term.name | capitalize }}</a> ({{ term.pages | length }})
+  </li>
   {% endfor %}
-  </ul>
+</ul>
 {% endblock main %}

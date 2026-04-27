@@ -9,8 +9,6 @@ base_url = "https://blog.nicolabaudo.fr"
 theme = "zola-386-nojs"
 
 default_language = "en"
-
-# Title and description will appear in homepage's header
 title = "blog.nicolabaudo.fr"
 description = "No Brain Inside, Use Your Own!"
 
