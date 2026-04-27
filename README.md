@@ -17,13 +17,21 @@ This theme is an independent evolution of the original [zola.386](https://github
 
 While the original port brought the DOS aesthetic to Zola, `zola-386-nojs` focuses on a **"Pure HTML/CSS"** approach:
 * **No-JS:** All JavaScript dependencies have been removed, ensuring maximum speed, security, and accessibility.
-* **Refactored:** The codebase has been streamlined for better maintainability.
+* **Refactored:** The codebase has been drastically streamlined, reducing the main CSS file from ~6000 to ~600 lines, significantly improving performance and maintainability.
 
 It stands on the shoulders of giants that inspired the original design:
 - [BOOTSTRA.386](https://kristopolous.github.io/BOOTSTRA.386/): Design and core ideas.
 - [HUGO.386](https://themes.gohugo.io/hugo.386/): Item placement.
 - [Dinkleberg](https://github.com/rust-br/dinkleberg): Internal structure and SEO.
 - [after-dark](https://github.com/getzola/after-dark): Navbar and components.
+
+## ⚡ Performance
+This theme is built for speed. By removing all JavaScript dependencies and drastically streamlining the CSS, `zola-386-nojs` consistently achieves:
+
+* **Google PageSpeed Insights:** 99-100/100 (Desktop & Mobile)
+
+*Results may vary based on your content and image optimization, but the theme's core footprint is as thin as it gets.*
+
 
 ## 🖥️ Features
 * **DOS Aesthetics:** 16-color palette, Fixedsys font, and rigorous CUI layout.
