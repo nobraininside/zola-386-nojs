@@ -27,3 +27,5 @@ desktop.ini
 # altri file che non voglio condividere
 Makefile
 /gemini/
+config.toml
+netlify.toml

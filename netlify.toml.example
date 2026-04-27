@@ -1,5 +1,7 @@
 # =============================================================================
 # NETLIFY BUILD CONFIGURATION
+# PUT THIS FILE AT THE ROOT OF YOUR ZOLA WEBSITE
+# AND RENAME IT netlify.toml
 # =============================================================================
 
 [build]

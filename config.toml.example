@@ -1,16 +1,18 @@
 # =============================================================================
 # SITE CONFIGURATION
+# PUT THIS FILE AT THE ROOT OF YOUR ZOLA WEBSITE
+# RENAME IT config.toml AND FILL IT
 # =============================================================================
 
 # The root URL of your site. Used to generate absolute links and RSS feeds.
-base_url = "https://blog.nicolabaudo.fr"
+base_url = "<YOUR_URL_(beginning_with_https://)>"
 
 # UNCOMMENT TO ENABLE THE THEME
 theme = "zola-386-nojs"
 
 default_language = "en"
-title = "blog.nicolabaudo.fr"
-description = "No Brain Inside, Use Your Own!"
+title = "<YOUR_URL_(without_https://)_OR_YOUR_WEBSITE'S_NAME>"
+description = "<YOUR_MOTTO_(will_appear_in_homepage_header)>"
 
 # Enable SASS compilation for the DOS-minimalist theme
 compile_sass = true
@@ -31,11 +33,11 @@ taxonomies = [
 # Footer content
 [extra]
 year = "2026"
-author = "Nicola Baudo"
-author_url = "https://nicolabaudo.fr"
-social = "Github"
-social_url = "https://github.com/nobraininside/zola-386-nojs"
-vat = "SIRET 99992053100012"
+author = "<YOUR_NAME>"
+author_url = "<LINK_YOUR_NAME_TO_ANOTHER_WEBSITE>"
+social = "<YOUR_REFERRED_SOCIAL>"
+social_url = "<LINK_TO_YOUR_SOCIAL_PERSONAL_PAGE>"
+vat = "<YOUR_VAT_NUMBER>"
 
 keywords = "zola, theme, retro, hacking"
 theme_color = "#000084"
@@ -52,8 +54,8 @@ zola386_menu = [
 # SOCIAL & METADATA
 # =============================================================================
 
-linkedin_user = "nicola-baudo-7986117"
-github_user = "nobraininside"
+linkedin_user = "<YOUR_LINKEDIN_USER_PAGE>"
+github_user = "YOUR_GITHUB_USERNAME>"
 
 # UI Labels (Internationalization)
 label_tags = "Tags"
