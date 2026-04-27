@@ -2,7 +2,7 @@
 
 `zola-386-nojs` is a lightweight, ultra-fast Zola theme inspired by the 1980s DOS/BIOS character user interface (CUI) aesthetics. It is designed for those who appreciate old-school design without compromising on modern performance and privacy.
 
-**[👉 View Live Demo](https://nicolabaudo.fr)**
+**[👉 View Live Demo](https://blog.nicolabaudo.fr)**
 
 ![Homepage](static/images/Screenshot1.jpeg)
 ![Homepage's footer](static/images/Screenshot2.jpeg)
