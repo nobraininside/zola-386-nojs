@@ -8,9 +8,9 @@
 ![Homepage's footer](static/images/Screenshot2.jpeg)
 ![Categories' page](static/images/Screenshot3.jpeg)
 ![Categorie's subpage](static/images/Screenshot4.jpeg)
-<img src="static/images/ScreenshotA.jpeg" alt="Smartphone homepage" width="50%">
-<img src="static/images/ScreenshotB.jpeg" alt="Smartphone homepage's footer" width="50%">
-<img src="static/images/ScreenshotC.jpeg" alt="Smartphone post/page" width="50%">
+<img src="static/images/ScreenshotA.jpeg" alt="Smartphone homepage" width="30%">
+<img src="static/images/ScreenshotB.jpeg" alt="Smartphone homepage's footer" width="30%">
+<img src="static/images/ScreenshotC.jpeg" alt="Smartphone post/page" width="30%">
 
 ## 🧬 Origins & Philosophy
 This theme is an independent evolution of the original [zola.386](https://github.com/lopes/zola.386) theme by [José Lopes](https://github.com/lopes).
