@@ -9,9 +9,13 @@ base_url = "https://nobraininside.github.io/zola-386-nojs/"
 title = "Zola-386-nojs Theme Demo"
 theme = "zola-386-nojs"
 
+taxonomies = [
+  {name = "categories", paginate_by = 5, rss = true},
+  {name = "tags", paginate_by = 5, rss = true},
+]
+
 [extra]
 brand = 'C:\>_SYSTEM_LOG'
-# Queste sono le variabili che causano l'errore
 zola386_menu = [
     {path="", name="Home"},
     {path="categories", name="Categories"},
@@ -19,10 +23,11 @@ zola386_menu = [
     {path="about", name="About"},
 ]
 label_tags = "Tags"
+label_tag = "Tag"
+label_categories = "Categories"
+label_category = "Category"
+label_author = "Author"
 label_date = "Date"
+label_taxonomy = "Taxonomy"
 label_reading = "Reading time"
-
-taxonomies = [
-  {name="categories", rss=true},
-  {name="tags", rss=true},
-]
+label_read_more = "Read more"
