@@ -8,3 +8,13 @@ theme = "zola-386-nojs"
 
 [extra]
 brand = 'C:\>_SYSTEM_LOG'
+# Queste sono le variabili che causano l'errore
+zola386_menu = [
+    {path="", name="Home"},
+    {path="categories", name="Categories"},
+    {path="tags", name="Tags"},
+    {path="about", name="About"},
+]
+label_tags = "Tags"
+label_date = "Date"
+label_reading = "Reading time"
