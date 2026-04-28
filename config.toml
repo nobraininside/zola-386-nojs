@@ -1,0 +1,10 @@
+# =============================================================================
+# SITE CONFIGURATION
+# =============================================================================
+
+base_url = "https://nobraininside.github.io/zola-386-nojs/"
+title = "Zola-386-nojs Theme Demo"
+theme = "zola-386-nojs"
+
+[extra]
+brand = "C:\>_SYSTEM_LOG"
