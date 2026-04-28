@@ -421,16 +421,28 @@ dd { margin-left: 21px; }
 #bar386 { float:right; width:100%; height:20px; font-weight:bold; color:#fff; background:#000084; }
 #cursor386 { position:fixed; right:0; bottom:0; z-index:100; font-weight:bold; color:#fff; }
 
-/* --- Responsive Overrides (Mobile-specific adjustments) --- */
+/* --- Breakpoint Intermedio (Tablet / Laptop piccoli) --- */
+@media (max-width: 1150px) {
+    .container {
+	width: 95% !important; /* Rende il layout fluido sotto i 1150px */
+    }
 
-@media (max-width: 768px) {
-  .container { width: auto !important; padding: 0 10px; }
-  .row { flex-direction: column; }
-  [class*="span"] { width: 100% !important; margin-left: 0 !important; }
-  
-  /* Hide non-essential mobile elements */
-  .hidden-phone { display: none !important; }
+    .row {
+	margin-left: -16px; /* Riduce leggermente i margini */
+    }
+
+    .main-content, .sidebar {
+	margin-left: 16px;
+    }
 }
+
+/* --- Manteniamo il Mobile (già esistente, ma lo puliamo) --- */
+@media (max-width: 768px) {
+    .container { width: auto !important; padding: 0 10px; }
+    .row { flex-direction: column; margin-left: 0 !important; }
+    .main-content, .sidebar { width: 100% !important; margin-left: 0 !important; }
+}
+
 
 /* --- Final Optimized Layout (Main Content & Sidebar) --- */
 .row { 
