@@ -7,4 +7,4 @@ title = "Zola-386-nojs Theme Demo"
 theme = "zola-386-nojs"
 
 [extra]
-brand = "C:\>_SYSTEM_LOG"
+brand = 'C:\>_SYSTEM_LOG'
