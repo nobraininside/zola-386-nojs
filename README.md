@@ -4,13 +4,14 @@
 
 **[👉 View Live Demo](https://blog.nicolabaudo.fr)**
 
-![Homepage](static/images/Screenshot1.jpeg)
-![Homepage's footer](static/images/Screenshot2.jpeg)
-![Categories' page](static/images/Screenshot3.jpeg)
-![Categorie's subpage](static/images/Screenshot4.jpeg)
-<img src="static/images/ScreenshotA.jpeg" alt="Smartphone homepage" width="30%">
-<img src="static/images/ScreenshotB.jpeg" alt="Smartphone homepage's footer" width="30%">
-<img src="static/images/ScreenshotC.jpeg" alt="Smartphone post/page" width="30%">
+** Screenshots
+![Homepage](themes/zola-386-nojs/static/images/Screenshot1.jpeg)
+![Homepage's footer](themes/zola-386-nojs/static/images/Screenshot2.jpeg)
+![Categories' page](themes/zola-386-nojs/static/images/Screenshot3.jpeg)
+![Categorie's subpage](themes/zola-386-nojs/static/images/Screenshot4.jpeg)
+<img src="themes/zola-386-nojs/static/images/ScreenshotA.jpeg" alt="Smartphone homepage" width="30%">
+<img src="themes/zola-386-nojs/static/images/ScreenshotB.jpeg" alt="Smartphone homepage's footer" width="30%">
+<img src="themes/zola-386-nojs/static/images/ScreenshotC.jpeg" alt="Smartphone post/page" width="30%">
 
 ## 🧬 Origins & Philosophy
 This theme is an independent evolution of the original [zola.386](https://github.com/lopes/zola.386) theme by [José Lopes](https://github.com/lopes).
