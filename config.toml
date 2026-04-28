@@ -16,6 +16,13 @@ taxonomies = [
 
 [extra]
 brand = 'C:\>_SYSTEM_LOG'
+year = "2026"
+author = "Your Name"
+author_url = "https://your-website.com"
+social = "Mastodon"
+social_url = "https://your-social-url"
+vat = "00000000000"
+
 zola386_menu = [
     {path="", name="Home"},
     {path="categories", name="Categories"},
@@ -31,3 +38,4 @@ label_date = "Date"
 label_taxonomy = "Taxonomy"
 label_reading = "Reading time"
 label_read_more = "Read more"
+
