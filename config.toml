@@ -22,6 +22,7 @@ label_tags = "Tags"
 label_date = "Date"
 label_reading = "Reading time"
 
-[taxonomies]
-categories = { name = "categories", paginate_by = 5 }
-tags = { name = "tags", paginate_by = 5 }
+taxonomies = [
+  {name="categories", rss=true},
+  {name="tags", rss=true},
+]
