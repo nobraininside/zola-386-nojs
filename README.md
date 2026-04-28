@@ -4,7 +4,7 @@
 
 **[👉 View Live Demo](https://blog.nicolabaudo.fr)**
 
-** Screenshots
+** Screenshots:**
 ![Homepage](themes/zola-386-nojs/static/images/Screenshot1.jpeg)
 ![Homepage's footer](themes/zola-386-nojs/static/images/Screenshot2.jpeg)
 ![Categories' page](themes/zola-386-nojs/static/images/Screenshot3.jpeg)
