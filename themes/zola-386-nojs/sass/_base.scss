@@ -444,6 +444,12 @@ dd { margin-left: 21px; }
 }
 
 
+/* evita sforamento immagini nei breakpoint */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* --- Final Optimized Layout (Main Content & Sidebar) --- */
 .row { 
   display: flex; 
